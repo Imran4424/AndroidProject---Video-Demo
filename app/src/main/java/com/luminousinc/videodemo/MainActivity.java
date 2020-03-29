@@ -17,12 +17,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        decorView = getWindow().getDecorView();
-        // Hide the status bar.
-        uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
-        decorView.setSystemUiVisibility(uiOptions);
-
+        
         mainVideo = (VideoView) findViewById(R.id.videoView);
         mainVideo.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.epictrailer);
 
