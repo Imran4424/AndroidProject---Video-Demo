@@ -32,4 +32,10 @@ public class MainActivity extends AppCompatActivity {
 
         mainVideo.start();
     }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        
+    }
 }
